@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GUI Exercise</string>
+    <string name="change_font_size">Change Font Size</string>
+    <string name="change_font_color">Change Font Color</string>
+</resources>
