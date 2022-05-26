@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         builder = new NotificationCompat.Builder(MainActivity.this, channel.getId())
                 .setSmallIcon(R.mipmap.ic_launcher);
         notificationManager.createNotificationChannel(channel);
-        31
+
     }
 
     @Override
