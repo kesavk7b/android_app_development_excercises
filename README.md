@@ -1,3 +1,2 @@
 # android_app_development_excercises
-Our laboratory exercise.
-it is just an try.
+Annauniversity R2017 Mobile Application Development laboratory exercise.
