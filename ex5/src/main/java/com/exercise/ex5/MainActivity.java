@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void notificationWithIcon() {
         Person anupam = new Person.Builder()
                 .setName("Anupam")
-                .setIcon(IconCompat.createWithResource(this, R.drawable.index))
+                .setIcon(IconCompat.createWithResource(this, R.drawable.prof))
                 .setImportant(true).build();
         new NotificationCompat.MessagingStyle(anupam)
                 .addMessage("Check out my latest article!", new Date().getTime(), anupam)
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Person bot = new Person.Builder()
                 .setName("Bot").setImportant(true)
                 .setBot(true).build();
-        Uri uri = Uri.parse("android.resource://com.journaldev.androidpnotifications/drawable/" + R.drawable.bg);
+        Uri uri = Uri.parse("android.resource://com.journaldev.androidpnotifications/drawable/" + R.drawable.prof);
         NotificationCompat.MessagingStyle.Message message = new
                 NotificationCompat.MessagingStyle.Message("Check out my latest article!", new Date().getTime(), bot);
         message.setData("image/*", uri);
@@ -114,11 +114,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .setName("JournalDev").build();
         Person anupam = new Person.Builder()
                 .setName("Anupam")
-                .setIcon(IconCompat.createWithResource(this, R.drawable.samindexple_photo))
+                .setIcon(IconCompat.createWithResource(this, R.drawable.prof))
                 .setImportant(true).build();
         Person bot = new Person.Builder()
                 .setName("Bot").setBot(true).build();
-        Uri uri = Uri.parse("android.resource://com.journaldev.androidpnotifications/drawable/" + R.drawable.bg);
+        Uri uri = Uri.parse("android.resource://com.journaldev.androidpnotifications/drawable/" + R.drawable.prof);
         NotificationCompat.MessagingStyle.Message message = new
                 NotificationCompat.MessagingStyle.Message("", new Date().getTime(), bot);
         message.setData("image/*", uri);
@@ -140,14 +140,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .build();
         Person anupam = new Person.Builder()
                 .setName("Anupam")
-                .setIcon(IconCompat.createWithResource(this, R.drawable.index))
+                .setIcon(IconCompat.createWithResource(this, R.drawable.prof))
                 .setImportant(true)
                 .build();
         Person bot = new Person.Builder()
                 .setName("Bot")
                 .setBot(true)
                 .build();
-        Uri uri = Uri.parse("android.resource://com.journaldev.androidpnotifications/drawable/" + R.drawable.bg);
+        Uri uri = Uri.parse("android.resource://com.journaldev.androidpnotifications/drawable/" + R.drawable.prof);
         Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra("hi", "Notifications were read");
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         message.setData("image/*", uri);
         NotificationCompat.Action replyAction =
                 new NotificationCompat.Action.Builder(
-                        R.drawable.bg, "MARK READ", pendingIntent)
+                        R.drawable.prof, "MARK READ", pendingIntent)
                         .setSemanticAction(NotificationCompat.Action.SEMANTIC_ACTION_MARK_AS_READ)
                         .build();
         NotificationCompat.Builder separateBuilder = builder;
